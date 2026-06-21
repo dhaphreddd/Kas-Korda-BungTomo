@@ -1,0 +1,9 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup data locally
+*.json
+!package.json
+!plugin.json

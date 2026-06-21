@@ -1,0 +1,194 @@
+/* ==========================================================================
+   CUSTOM STYLE SUPPLEMENTS - KAS KORDA BUNG TOMO
+   ========================================================================== */
+
+:root {
+    color-scheme: dark;
+}
+
+/* Background requested specifically matching theme */
+body {
+    background-color: #0e1511;
+}
+
+/* Custom scrollbar for dark mode */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #0e1511;
+}
+::-webkit-scrollbar-thumb {
+    background: #3c4a42;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #86948a;
+}
+
+/* Glass panel style matching surface-container */
+.glass-panel {
+    background: #1a211d;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark Input Styling matching background */
+.input-dark {
+    background-color: #0e1511 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #dde4dd !important;
+    color-scheme: dark !important;
+}
+.input-dark:focus {
+    border-color: #10B981 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 1px #10B981 !important;
+    --tw-ring-color: #10B981 !important;
+}
+.input-dark option {
+    background-color: #1a211d !important;
+    color: #dde4dd !important;
+}
+
+/* Primary Button Styling */
+.btn-primary {
+    background-color: #10B981;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+.btn-primary:hover {
+    background-color: #0d9668;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+}
+
+/* Kanban Drag & Drop Visuals */
+.drag-over {
+    border: 2px dashed #10b981 !important;
+    background-color: rgba(16, 185, 129, 0.05) !important;
+}
+
+/* Sidebar sliding drawer configuration on mobile */
+.sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sidebar.open {
+    transform: translateX(0);
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        transform: translateX(0) !important;
+    }
+}
+
+/* Modals System Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+/* Toast Notifications Container */
+.toast-container {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 360px;
+    width: 100%;
+}
+
+.toast {
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+    animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}
+
+.toast-success {
+    background: rgba(16, 185, 129, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.toast-danger {
+    background: rgba(239, 68, 68, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+/* Printer/PDF Stylesheet overrides */
+@media print {
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+    .sidebar, #btn-menu-toggle, #btn-floating-add, header, .toast-container, button, .filter-bar, .demo-login-helper, .no-print {
+        display: none !important;
+    }
+    main {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .glass-panel {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        color: black !important;
+    }
+    th, td {
+        border-bottom: 1px solid #ccc !important;
+        color: black !important;
+    }
+    .print-report-header {
+        display: block !important;
+        text-align: center;
+        margin-bottom: 2rem;
+        border-bottom: 2px solid black;
+        padding-bottom: 1rem;
+    }
+}
+
+.print-report-header {
+    display: none;
+}

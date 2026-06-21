@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pengaturan Aplikasi - Kas Korda Bung Tomo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Inter:wght@400;600&amp;family=Geist:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#00422b",
+                        "on-secondary-container": "#00452e",
+                        "surface-bright": "#343b36",
+                        "tertiary-fixed-dim": "#ffb3af",
+                        "on-error": "#690005",
+                        "surface-container-low": "#161d19",
+                        "primary-container": "#10b981",
+                        "secondary-container": "#00bd85",
+                        "surface-variant": "#2f3632",
+                        "tertiary-container": "#fc7c78",
+                        "surface-dim": "#0e1511",
+                        "on-secondary-fixed-variant": "#005137",
+                        "inverse-on-surface": "#2b322d",
+                        "primary-fixed-dim": "#4edea3",
+                        "surface-container-lowest": "#09100c",
+                        "error": "#ffb4ab",
+                        "tertiary-fixed": "#ffdad7",
+                        "on-primary-fixed": "#002113",
+                        "on-tertiary": "#650911",
+                        "surface-tint": "#4edea3",
+                        "outline": "#86948a",
+                        "background": "#0e1511",
+                        "surface-container-high": "#242c27",
+                        "inverse-primary": "#006c49",
+                        "outline-variant": "#3c4a42",
+                        "on-error-container": "#ffdad6",
+                        "tertiary": "#ffb3af",
+                        "secondary-fixed-dim": "#45dfa4",
+                        "primary": "#4edea3",
+                        "on-surface": "#dde4dd",
+                        "surface": "#0e1511",
+                        "on-secondary-fixed": "#002114",
+                        "surface-container": "#1a211d",
+                        "inverse-surface": "#dde4dd",
+                        "on-tertiary-fixed-variant": "#842225",
+                        "on-primary-fixed-variant": "#005236",
+                        "on-tertiary-fixed": "#410005",
+                        "on-background": "#dde4dd",
+                        "surface-container-highest": "#2f3632",
+                        "on-secondary": "#003825",
+                        "on-primary": "#003824",
+                        "primary-fixed": "#6ffbbe",
+                        "secondary": "#45dfa4",
+                        "error-container": "#93000a",
+                        "on-tertiary-container": "#711419",
+                        "on-surface-variant": "#bbcabf",
+                        "secondary-fixed": "#68fcbf"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "40px",
+                        "unit": "4px",
+                        "container-max": "1440px",
+                        "margin-mobile": "16px",
+                        "stack-lg": "32px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "label-caps": ["Geist"],
+                        "numeric-lg": ["Geist"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "display-xl": ["Plus Jakarta Sans"],
+                        "body-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["36px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "display-lg-mobile": ["28px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "numeric-lg": ["32px", { "lineHeight": "1", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #0e1511; color: #dde4dd; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .filled-icon { font-variation-settings: 'FILL' 1; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0e1511; }
+        ::-webkit-scrollbar-thumb { background: #3c4a42; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #4edea3; }
+    </style>
+</head>
+<body class="font-body-md text-body-md bg-background min-h-screen flex">
+<!-- SideNavBar -->
+<aside class="w-72 h-screen fixed left-0 top-0 border-r border-outline-variant bg-surface-container-low dark:bg-surface-container-low z-50">
+<div class="flex flex-col h-full py-6">
+<!-- Header -->
+<div class="px-6 mb-8 flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container">account_balance</span>
+</div>
+<div>
+<h1 class="text-headline-md font-display-lg text-primary text-xl">Kas Korda BT</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Surabaya Branch</p>
+</div>
+</div>
+<!-- CTA -->
+<div class="px-6 mb-6">
+<button class="w-full bg-primary-container hover:bg-primary-fixed text-on-primary-container font-bold py-3 rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">add</span>
+                    Input Transaksi
+                </button>
+</div>
+<!-- Navigation Links -->
+<nav class="flex-1 overflow-y-auto px-2 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/20 transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">dashboard</span>
+                    Dashboard
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/20 transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">event</span>
+                    Manajemen Acara
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/20 transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">history</span>
+                    Riwayat Transaksi
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/20 transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">payments</span>
+                    Kontribusi &amp; Donasi
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/20 transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">assessment</span>
+                    Laporan
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/20 transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">view_kanban</span>
+                    Persetujuan
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/20 transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">receipt_long</span>
+                    Log Audit
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 border-l-4 border-primary bg-primary-container/10 text-primary font-bold rounded-r-lg" href="#">
+<span class="material-symbols-outlined filled-icon">settings</span>
+                    Pengaturan
+                </a>
+</nav>
+<!-- Footer -->
+<div class="mt-auto px-2 pt-4 border-t border-outline-variant">
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/20 transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined">help</span>
+                    Bantuan
+                </a>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="flex-1 ml-72 flex flex-col min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 right-0 w-[calc(100%-288px)] z-40 bg-background/80 backdrop-blur-md border-b border-outline-variant h-16 px-margin-desktop flex justify-between items-center">
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary font-bold border-b-2 border-primary pb-1">settings</span>
+<span class="font-body-sm text-body-sm text-on-surface">Pengaturan Aplikasi</span>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 cursor-pointer">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 cursor-pointer">
+<span class="material-symbols-outlined">apps</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-surface-variant border border-outline overflow-hidden cursor-pointer hover:border-primary transition-colors">
+<img alt="Administrator Profile" class="w-full h-full object-cover" data-alt="A macro photography portrait of a professional corporate administrator in a sleek modern office. Sharp focus on the subject with a blurred deep blue background. The lighting is cinematic and cool, creating a premium fintech aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuIfRhItj2-lCp_zx0TixGzoTp2ki0kZZbVYiLPGxF30ChpH_p9ExzvGoar6wYLKaeYIkiLoOUBjrr3paPuKs2Ibr06g3ACKBOj_WiBQxn5fiKwrgXhTlVk6Ld9aaIJrSYcaWvt-3jNyu81G-m_mfwSx71cyvYlG_jU634gnnmsFmedh6ljgVweTQjAQxsF6gLJUZruG0CriIRKVR8JeKhGfKjtXWSdw_Jf9iA_QU8ImJFdm5JAZcMaRE_JdFBqK2RhVrDHwUMTQ"/>
+</div>
+</div>
+</header>
+<!-- Canvas -->
+<main class="flex-1 mt-16 p-margin-desktop bg-background overflow-y-auto">
+<div class="max-w-6xl mx-auto">
+<div class="mb-8">
+<h2 class="text-display-lg font-display-lg text-on-surface">Pengaturan</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Kelola konfigurasi sistem, hak akses, dan preferensi organisasi.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Settings Navigation (Left Column) -->
+<div class="lg:col-span-3 space-y-2">
+<a class="block px-4 py-3 rounded-lg bg-surface-variant/50 text-primary border border-outline-variant/50 font-bold transition-all" href="#profil">Profil Organisasi</a>
+<a class="block px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-variant/30 hover:text-on-surface transition-all" href="#pengguna">Manajemen Pengguna</a>
+<a class="block px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-variant/30 hover:text-on-surface transition-all" href="#hak-akses">Hak Akses &amp; Peran</a>
+<a class="block px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-variant/30 hover:text-on-surface transition-all" href="#backup">Keamanan &amp; Backup</a>
+<a class="block px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-variant/30 hover:text-on-surface transition-all" href="#integrasi">Integrasi Sistem</a>
+</div>
+<!-- Settings Content (Right Column) -->
+<div class="lg:col-span-9 space-y-8">
+<!-- Profil Organisasi Section -->
+<section class="bg-surface-container rounded-xl border border-outline-variant/30 p-8 shadow-[0_8px_30px_rgb(0,0,0,0.12)]" id="profil">
+<div class="flex items-center gap-3 mb-6 border-b border-outline-variant/30 pb-4">
+<span class="material-symbols-outlined text-primary text-2xl">domain</span>
+<h3 class="text-headline-md font-headline-md text-on-surface">Profil Organisasi</h3>
+</div>
+<div class="flex flex-col md:flex-row gap-8">
+<div class="w-full md:w-1/3 flex flex-col items-center">
+<div class="w-32 h-32 rounded-lg bg-surface-variant border border-outline border-dashed flex items-center justify-center mb-4 overflow-hidden relative group cursor-pointer">
+<div class="absolute inset-0 bg-black/50 hidden group-hover:flex items-center justify-center transition-all z-10">
+<span class="material-symbols-outlined text-white">upload</span>
+</div>
+<img alt="Logo Organisasi" class="w-full h-full object-cover opacity-80" data-alt="A minimalist geometric logo design for a modern financial technology company. The logo features sharp edges and a sleek green and deep blue color palette. Set against a dark metallic background, the lighting highlights the metallic sheen of the emblem." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARpJmNWEeTk1Legjx4p4tu-xluqaLO-keCH6pLYCNala59ycC2X4BpYuOyJskt_6P_ieEhLQRZl4GfNboUeLoB462dfNw8I5CsXfT0Rono7_IOv02E_tcLf6W_sG5JxOMMwEdWXHsICyfycExOwp2bQxWxwBxJR8Jr1WoDIN9rWEBc-tlBzOVyZwLOI3YNteqBKFgM-gy-FDj2367WL2fw8cgpAVuPaQEBdI46TrPD4rxwFx-plfhqIzE_YVviwlomchOX146Umg"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center">Format disarankan: PNG transparan,<br/>maksimal 2MB.</p>
+</div>
+<div class="w-full md:w-2/3 space-y-5">
+<div>
+<label class="block font-body-sm text-body-sm font-bold text-on-surface mb-2">Nama Organisasi</label>
+<input class="w-full bg-background border border-outline-variant rounded-lg px-4 py-2 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary transition-colors" type="text" value="Kas Korda Bung Tomo"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div>
+<label class="block font-body-sm text-body-sm font-bold text-on-surface mb-2">Cabang / Wilayah</label>
+<input class="w-full bg-background border border-outline-variant rounded-lg px-4 py-2 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary transition-colors" type="text" value="Surabaya Branch"/>
+</div>
+<div>
+<label class="block font-body-sm text-body-sm font-bold text-on-surface mb-2">Nomor Registrasi</label>
+<input class="w-full bg-background border border-outline-variant rounded-lg px-4 py-2 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary transition-colors" type="text" value="REG-2023-KB-091"/>
+</div>
+</div>
+<div>
+<label class="block font-body-sm text-body-sm font-bold text-on-surface mb-2">Alamat Lengkap</label>
+<textarea class="w-full bg-background border border-outline-variant rounded-lg px-4 py-2 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary transition-colors" rows="3">Jl. Pahlawan No. 10, Alun-alun Contong, Bubutan, Surabaya, Jawa Timur 60174</textarea>
+</div>
+<div class="pt-4 flex justify-end">
+<button class="bg-primary hover:bg-primary-fixed text-on-primary font-bold py-2 px-6 rounded-lg transition-colors">Simpan Perubahan</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>
